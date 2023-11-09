@@ -1,6 +1,6 @@
 package bg.smg;
 
-public class Truck extends Vehicle implements Comparable<Truck> {
+public class Truck extends Vehicle  {
 
     private int weight;
 
@@ -9,15 +9,15 @@ public class Truck extends Vehicle implements Comparable<Truck> {
         System.out.println("We are driving " + this.toString() + " with speed " + speed);
     }
 
-    @Override
-    public int compareTo(Truck t) {
-        if(this.getWeight()>t.getWeight())
-            return 1;
-        else if(this.getWeight()<t.getWeight())
-            return -1;
-        else
-            return 0;
-    }
+//    @Override
+//    public int compareTo(Truck t) {
+//        if(this.getWeight()>t.getWeight())
+//            return 1;
+//        else if(this.getWeight()<t.getWeight())
+//            return -1;
+//        else
+//            return 0;
+//    }
 
 //    @Override
 //    public int compareTo(Truck t) {
