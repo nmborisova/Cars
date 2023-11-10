@@ -6,7 +6,7 @@ public class Truck extends Vehicle  {
 
     @Override
     public void drive(double speed) {
-        System.out.println("We are driving " + this.toString() + " with speed " + speed);
+        System.out.println("We are driving " + toString() + " with speed " + speed);
     }
 
 //    @Override
@@ -27,9 +27,7 @@ public class Truck extends Vehicle  {
     @Override
     public String toString() {
         return "Truck{" +
-                "make=" + getMake() + " " +
-                "model=" + getModel() + " " +
-                "yearProduction=" + getYearProduction() + " " +
+                super.toString() +
                 "weight=" + getWeight() +
                 '}';
     }

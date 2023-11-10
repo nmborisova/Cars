@@ -37,8 +37,8 @@ public class Main {
         vehicles[3]=c2;
 
         Arrays.sort(vehicles);
-        for(Vehicle t : vehicles) {
-            System.out.println(t.toString());
+        for(Vehicle v : vehicles) {
+            System.out.println(v.toString());
         }
     }
 }

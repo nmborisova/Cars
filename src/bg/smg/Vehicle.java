@@ -18,6 +18,15 @@ public abstract class Vehicle implements Comparable<Vehicle> {
             return 0;
     }
 
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", yearProduction=" + yearProduction +
+                '}';
+    }
+
     public String getMake() {
         return make;
     }

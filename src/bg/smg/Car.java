@@ -1,6 +1,6 @@
 package bg.smg;
 
-public class Car extends Vehicle{
+public class Car extends Vehicle {
 
     private int hp;
 
@@ -27,9 +27,7 @@ public class Car extends Vehicle{
     @Override
     public String toString() {
         return "Car{" +
-                "make=" + getMake() + " " +
-                "model=" + getModel() + " " +
-                "yearProduction=" + getYearProduction() + " " +
+                super.toString() +
                 "hp=" + getHp() +
                 '}';
     }
